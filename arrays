@@ -1,0 +1,8 @@
+commands_list=(netstat ip neigh route traceroute)
+echo netstat
+echo netstat ip neigh route traceroute
+echo neigh
+
+# to iterate arrays in bash 
+for item in ${commands_list[@]}; 
+	do echo $item | wc -c ; done
